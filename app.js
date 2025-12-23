@@ -7,6 +7,7 @@ app.use(express.json());
 
 app.use('/categories', require('./routes/categoryRoutes'));
 app.use('/products', require('./routes/productRoutes'));
+app.use('/users', require('./routes/userRoutes'));
 
 app.listen(3000, () => {
   console.log('Server berjalan di port 3000');
